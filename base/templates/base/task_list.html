@@ -5,9 +5,21 @@
 <a href="{% url 'login' %}">Login</a>
 {% endif %}
 
-<h1>Лютый To do List</h1>
+<hr> 
+<h1>Лютый To do List {{color}}</h1>
 
 <a href="{% url 'task-create' %}">Создать попс</a>
+<!-- 
+<form method="GET">
+    <input type="text" name='serch-area' valuae="{{search_input}}">
+    <input type="submit" value='Search'>
+</form> -->
+
+<form method="GET">
+    <input type="text" name="search-area" value="{{ search_input }}">
+    <input type="submit" value="Поиск">
+</form>
+
 
 <table>
     <tr>
