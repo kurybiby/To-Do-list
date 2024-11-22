@@ -1,0 +1,6 @@
+<a href="{% url 'tasks' %}">Назад жи есть</a>
+<form method="POST">
+    {% csrf_token %}
+    <p>Уверен что хочешь удалить этот попс? </p>
+    <input type="submit" value="Удалить"/>
+</form>
